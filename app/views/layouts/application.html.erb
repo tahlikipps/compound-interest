@@ -8,11 +8,14 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <%= render "shared/navbar" %>
-    <%= yield %>
+    <div class="body-container">
+      <%= yield %>
+    </div>
     <%= render "shared/footer" %>
   </body>
 </html>

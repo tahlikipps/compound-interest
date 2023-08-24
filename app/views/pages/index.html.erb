@@ -1,0 +1,43 @@
+<div class="pg-container">
+  <h1>Compound interest calculator</h1>
+  <div class="content-container" data-controller="calculator">
+    <div class="left-container">
+      <h3 class="title">Enter Details:</h3>
+      <form id="CompoundInterestCalculator">
+        <label for="deposit">Deposited amount ($)*</label>
+        <br>
+        <input type="number" name="deposit" data-calculator-target="deposit"/>
+        <br>
+        <label for="interest">Interest rate (% per annum)*</label>
+        <br>
+        <input type="number" name="interest" data-calculator-target="interest" step=".01" />
+        <br>
+        <label for="payments">Interest paid*</label>
+        <br>
+          <select name="payments" data-calculator-target="payments">
+            <option value="monthly">Monthly</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="annually">Annually</option>
+            <option value="maturity">At Maturity</option>
+          </select>
+        <br>
+        <label for="termyears">Length of Term Deposit (Years)*</label>
+        <br>
+        <input type="number" name="termyears" label="Investment Term" data-calculator-target="termyears" min="1" max="5">
+        <br>
+        <label for="extra">Extra deposit (monthly)</label>
+        <br>
+        <input type="number" data-calculator-target="extra"/>
+        <br>
+        <button type="submit" data-action="click->calculator#calculate">Calculate</button>
+      </form>
+    </div>
+      <%# Results section %>
+    <div class="right-container">
+      <h3 class="title">Results:</h3>
+      <div class="results" data-calculator-target="result">
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

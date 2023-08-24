@@ -13,16 +13,28 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-color: rgb(249, 244, 190);
+}
+
+.body-container {
+  width: 90%;
+  font-family: Roboto;
+  margin: auto;
+}
 
  .navbar-calc {
   justify-content: space-between;
   background: white;
+  font-family: Roboto;
+  padding: 10px;
+  background-color: palegoldenrod;
+  height:40px;
 }
 
 .navbar-calc .navbar-brand img {
   width: 40px;
 }
-
 
  .footer {
   background: black;
@@ -31,7 +43,9 @@
   justify-content: space-between;
   height: 80px;
   padding: 0px 50px;
-  color: white;
+  color: lightsalmon;
+  font-family: Roboto;
+  top: 0px;
 }
 .footer-links {
   display: flex;
@@ -49,4 +63,47 @@
 }
 .footer .fa-heart {
   color: #D23333;
+}
+
+.pg-container {
+  background-color: white;
+  padding: 10px;
+  min-height: calc(100vh - 170px);
+}
+
+.content-container {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-container {
+  height: fit-content;
+  width: 50%;
+}
+
+form label {
+  width: 100%;
+  margin: 10px;
+  font-size: small;
+}
+
+form input {
+  width: 50%;
+  margin: 10px;
+}
+
+form button {
+  margin: 10px;
+}
+
+select {
+  margin: 10px;
+  width: 50%;
+}
+
+.right-container {
+  height: fit-content;
+  width: 50%;
 }
