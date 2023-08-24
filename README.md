@@ -1,24 +1,40 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Compound Interest Calculator
 
-Things you may want to cover:
+A simple tool to help calculate the final total and total interest earned for a Term Deposit. 
 
-* Ruby version
 
-* System dependencies
+## Built with
 
-* Configuration
+Ruby, Rails, Stimulus JS framework.
+## Installation
 
-* Database creation
+Before cloning the repository, ensure you have Ruby and Rails installed.
 
-* Database initialization
+```bash
+  ruby -v
+  rails -v
+  git clone git@github.com:tahlikipps/compound-interest.git
+  cd your-project
+  bundle install
+```
+    
+## Deployment
 
-* How to run the test suite
+To deploy this project run
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+  rails s
+```
 
-* Deployment instructions
 
-* ...
+## Running Tests
+
+To run Capybara tests, run the following command.
+
+
+```bash
+  rails test:system
+```
+
+These basic tests will confirm; 1) The index page is loading, and 2) Results generated (i.e. Final Balance) matches expected results based on input.
