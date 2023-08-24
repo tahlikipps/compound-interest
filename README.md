@@ -42,6 +42,9 @@ These basic tests will confirm; 1) The index page is loading, and 2) Results gen
 
 ## Demo
 
-https://github.com/tahlikipps/compound-interest/assets/122308794/a1d97cd9-82d8-48bc-a031-e67d432c3aa2
+
+
+https://github.com/tahlikipps/compound-interest/assets/122308794/2048c0f9-1d96-4d80-8c44-ba63234a5e64
+
 
 
