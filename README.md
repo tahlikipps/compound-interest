@@ -1,7 +1,7 @@
 
 # Compound Interest Calculator
 
-A simple tool to help calculate the final total and total interest earned for a Term Deposit. 
+A simple tool to help calculate the final balance and total interest earned for a Term Deposit. 
 
 
 ## Built with
