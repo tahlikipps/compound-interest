@@ -33,8 +33,15 @@ To deploy this project run
 To run Capybara tests, run the following command.
 
 
+
 ```bash
   rails test:system
 ```
 
 These basic tests will confirm; 1) The index page is loading, and 2) Results generated (i.e. Final Balance) matches expected results based on input.
+
+## Demo
+
+https://github.com/tahlikipps/compound-interest/assets/122308794/a1d97cd9-82d8-48bc-a031-e67d432c3aa2
+
+
