@@ -27,8 +27,14 @@ export default class extends Controller {
       console.log("valid");
     }
 
+    let final = 0;
   const termPayments = createtermPayments(payments, termYears)
-    let final = compoundInterest(deposit, termPayments, interestRate, termYears, result);
+  if (termPayments === "maturity") {
+    //simple interest for at maturity
+    final = simpleInterest(deposit, interestRate, termYears)
+  } else {
+    final = compoundInterest(deposit, termPayments, interestRate, termYears, result);
+  }
     return (result.innerHTML = "Final Balance: $" +
       final + "<br>Total Interest Earned: $" + (final - deposit).toFixed(2));
 
@@ -45,6 +51,14 @@ export default class extends Controller {
       ).toFixed(0);
     }
 
+    function simpleInterest (deposit, interestRate, termYears){
+      console.log("simple interest")
+      // A = P(1 + rt)
+      return (
+        deposit * (1 + ((interestRate / 100) * termYears))).toFixed(0);
+      }
+
+
     function createtermPayments(payments, termYears) {
       let termPayments = "";
         switch(payments) {
@@ -52,10 +66,10 @@ export default class extends Controller {
           termPayments = 4;
           break;
           case "annually":
-          termPayments = termYears;
+          termPayments = 1;
           break;
           case "maturity":
-          termPayments = 1;
+          termPayments = "maturity";
           break;
           default:
             termPayments = 12;
